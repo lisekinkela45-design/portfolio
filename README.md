@@ -15,7 +15,6 @@ Site statique, sans framework ni étape de build :
 ## Structure
 
 ```
-site/
 ├── assets
 ├── associations
 ├── presentations
