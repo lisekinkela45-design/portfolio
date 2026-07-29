@@ -16,26 +16,18 @@ Site statique, sans framework ni étape de build :
 
 ```
 site/
+├── assets
+├── associations
+├── presentations
+├── uvs
 ├── index.html      # contenu (à propos, compétences, projets, engagement, contact)
+├── cv.pdf
 ├── styles.css       # design système (couleurs, typographie, responsive)
 ├── script.js         # filtres de projets + menu mobile
 └── .github/
     └── workflows/
         └── deploy.yml   # déploiement automatique sur GitHub Pages
 ```
-
-## Lancer en local
-
-Aucune dépendance à installer. Ouvrir directement `index.html` dans un navigateur, ou servir le dossier :
-
-```bash
-python3 -m http.server 8000
-# puis ouvrir http://localhost:8000
-```
-
-## Déploiement
-
-Le déploiement sur GitHub Pages est automatique via GitHub Actions (`.github/workflows/deploy.yml`) à chaque push sur `main`. Pour l'activer sur un nouveau repo : Settings → Pages → Source → GitHub Actions.
 
 ## Contenu
 
